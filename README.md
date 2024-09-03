@@ -53,7 +53,7 @@ Para configurar e executar o projeto localmente, siga as etapas abaixo:
 ### 5.2. Clonar o Repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/FelipeTiLustosa/GraphAlgorithmsVisualizer-java.git
 cd <DIRETORIO_DO_PROJETO>
 ```
 ### 5.3. Compilar e Executar
