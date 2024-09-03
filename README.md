@@ -56,8 +56,6 @@ Para configurar e executar o projeto localmente, siga as etapas abaixo:
 git clone <URL_DO_REPOSITORIO>
 cd <DIRETORIO_DO_PROJETO>
 ```
-## 5. Compilação e Execução
-
 ### 5.3. Compilar e Executar
 
 No IntelliJ IDEA:
