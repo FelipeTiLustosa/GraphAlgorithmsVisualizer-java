@@ -1,77 +1,57 @@
-# Projeto de Implementação de Grafos
+# Projeto de Grafos
 
-Este projeto implementa um grafo em Java, permitindo a manipulação de vértices e arestas, bem como a execução de algoritmos clássicos de grafos. O projeto visa fornecer uma estrutura clara e bem organizada para quem deseja explorar a teoria dos grafos através de código.
+## 1. Visão Geral
 
-## Funcionalidades do Sistema
+O projeto de grafos é uma aplicação que permite a manipulação e análise de grafos direcionados e não direcionados. O sistema oferece uma interface para adicionar e remover vértices e arestas, além de realizar diversas operações sobre o grafo, como cálculos de grau, verificação de conexidade, e algoritmos de caminho mínimo e árvores geradoras mínimas.
 
-### Inserir Vértice
-Adiciona um novo vértice ao grafo, criando um novo nó sem arestas conectadas inicialmente.
+Este projeto é ideal para quem deseja entender e experimentar conceitos de teoria dos grafos e algoritmos relacionados.
 
-### Inserir Aresta
-Adiciona uma aresta entre dois vértices, com um peso específico, representando a conexão e a relação entre esses vértices.
+## 2. Funcionalidades
 
-### Remover Vértice
-Remove um vértice existente no grafo e todas as arestas associadas a ele, mantendo a integridade do grafo.
+Abaixo estão listadas as funcionalidades do sistema, organizadas em uma tabela para melhor visualização:
 
-### Remover Aresta
-Remove uma aresta específica entre dois vértices, mantendo os vértices conectados.
+| Funcionalidade                           | Descrição                                                                                     |
+|------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Inserir Vértice**                      | Adiciona um novo vértice ao grafo.                                                             |
+| **Inserir Aresta**                       | Adiciona uma aresta entre dois vértices com um peso específico.                               |
+| **Remover Vértice**                      | Remove um vértice e todas as arestas associadas a ele.                                        |
+| **Remover Aresta**                       | Remove uma aresta específica entre dois vértices.                                             |
+| **Visualizar Grafo**                     | Exibe a representação do grafo, podendo ser através de texto ou visualização gráfica.          |
+| **Informar Grau de um Vértice**          | Calcula e exibe o grau de um vértice específico.                                               |
+| **Verificar se o Grafo é Conexo**        | Verifica se há um caminho entre todos os pares de vértices.                                    |
+| **Converter para Matriz de Adjacência**  | Transforma a lista de adjacências em uma matriz de adjacências.                                |
+| **Caminhamento em Amplitude (BFS)**      | Implementa o algoritmo de Busca em Largura.                                                   |
+| **Caminhamento em Profundidade (DFS)**   | Implementa o algoritmo de Busca em Profundidade.                                              |
+| **Caminho Mínimo (Dijkstra)**            | Implementa o algoritmo de Dijkstra para encontrar o caminho mais curto entre dois vértices.    |
+| **Árvore Geradora Mínima (Prim)**        | Implementa o algoritmo de Prim para encontrar a árvore geradora mínima do grafo.              |
 
-### Visualizar Grafo
-Exibe a representação do grafo na forma de uma lista de adjacências, ou pode ser adaptado para uma visualização gráfica.
+## 3. Tecnologias Utilizadas
 
-### Informar Grau de um Vértice
-Calcula e exibe o grau de um vértice específico, indicando o número de conexões que ele possui.
+- **Linguagem de Programação**: [Java](https://www.java.com/)
+- **IDE**: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- **Bibliotecas**: Nenhuma biblioteca externa foi utilizada para a implementação dos algoritmos de grafos.
+- **Gerenciamento de Versão**: [Git](https://git-scm.com/)
+- **Ambiente de Desenvolvimento**: [Docker](https://www.docker.com/) (se aplicável)
 
-### Verificar se o Grafo é Conexo
-Verifica se há um caminho entre todos os pares de vértices do grafo, determinando se ele é conexo.
+## 4. Links para Recursos Adicionais
 
-### Converter para Matriz de Adjacência
-Transforma a lista de adjacências do grafo em uma matriz de adjacências, uma forma alternativa de representar o grafo.
+- **Teoria dos Grafos**: [Wikipedia - Teoria dos Grafos](https://pt.wikipedia.org/wiki/Teoria_dos_grafos)
+- **Algoritmo de Dijkstra**: [Wikipedia - Algoritmo de Dijkstra](https://pt.wikipedia.org/wiki/Algoritmo_de_Dijkstra)
+- **Algoritmo de Prim**: [Wikipedia - Algoritmo de Prim](https://pt.wikipedia.org/wiki/Algoritmo_de_Prim)
+- **Busca em Largura (BFS)**: [Wikipedia - Busca em Largura](https://pt.wikipedia.org/wiki/Busca_em_largura)
+- **Busca em Profundidade (DFS)**: [Wikipedia - Busca em Profundidade](https://pt.wikipedia.org/wiki/Busca_em_profundidade)
 
-### Caminhamento em Amplitude (BFS)
-Implementa o algoritmo de Busca em Largura (BFS) para percorrer o grafo, visitando os vértices camada por camada.
+## 5. Configuração e Execução
 
-### Caminhamento em Profundidade (DFS)
-Implementa o algoritmo de Busca em Profundidade (DFS) para percorrer o grafo, explorando o máximo possível ao seguir cada caminho.
+Para configurar e executar o projeto localmente, siga as etapas abaixo:
 
-### Caminho Mínimo (Dijkstra)
-Implementa o algoritmo de Dijkstra para encontrar o caminho mais curto entre dois vértices, considerando pesos nas arestas.
+### 5.1. Pré-requisitos
 
-### Árvore Geradora Mínima (Prim)
-Implementa o algoritmo de Prim para encontrar a árvore geradora mínima do grafo, conectando todos os vértices com o menor custo total possível.
+- Certifique-se de ter o [Java](https://www.java.com/) instalado em sua máquina.
+- Tenha o [IntelliJ IDEA](https://www.jetbrains.com/idea/) instalado para gerenciar o projeto.
 
-## Tecnologias Utilizadas
+### 5.2. Clonar o Repositório
 
-- **Java**: Linguagem de programação principal utilizada no projeto.
-- **Maven**: Ferramenta de automação de compilação e gerenciamento de dependências.
-- **IntelliJ IDEA**: IDE recomendada para desenvolvimento e execução do projeto.
-
-### Bibliotecas e Dependências
-
-Este projeto utiliza o Maven para gerenciar suas dependências. Certifique-se de que as seguintes dependências estejam presentes no arquivo `pom.xml`:
-
-```xml
- <!-- JGraphT para grafos -->
-        <dependency>
-            <groupId>org.jgrapht</groupId>
-            <artifactId>jgrapht-core</artifactId>
-            <version>1.5.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jgrapht</groupId>
-            <artifactId>jgrapht-ext</artifactId>
-            <version>1.5.1</version>
-        </dependency>
-
-        <!-- JGraphX para visualização gráfica -->
-        <dependency>
-            <groupId>com.mxgraph</groupId>
-            <artifactId>jgraphx</artifactId>
-            <version>4.0.6</version>
-        </dependency>
-       <!-- <dependency>
-            <groupId>com.mxgraph</groupId>
-            <artifactId>mxgraph</artifactId>
-            <version>4.0.1</version>
-        </dependency> -->
-
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd <DIRETORIO_DO_PROJETO>
