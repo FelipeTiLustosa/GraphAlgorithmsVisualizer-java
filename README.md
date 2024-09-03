@@ -31,7 +31,7 @@ Abaixo estão listadas as funcionalidades do sistema, organizadas em uma tabela 
 - **IDE**: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - **Bibliotecas**: Nenhuma biblioteca externa foi utilizada para a implementação dos algoritmos de grafos.
 - **Gerenciamento de Versão**: [Git](https://git-scm.com/)
-- **Ambiente de Desenvolvimento**: [Docker](https://www.docker.com/) (se aplicável)
+- **Ambiente de Desenvolvimento**: [Docker](https://www.docker.com/)
 
 ## 4. Links para Recursos Adicionais
 
