@@ -1,4 +1,4 @@
-# Projeto de Grafos
+# GRAFOS EM JAVA <img src="https://skillicons.dev/icons?i=java" alt="Java Icon" style="vertical-align: middle; height: 35px;"/>
 
 ## 1. Visão Geral
 
@@ -55,3 +55,52 @@ Para configurar e executar o projeto localmente, siga as etapas abaixo:
 ```bash
 git clone <URL_DO_REPOSITORIO>
 cd <DIRETORIO_DO_PROJETO>
+```
+## 5. Compilação e Execução
+
+### 5.3. Compilar e Executar
+
+No IntelliJ IDEA:
+
+1. Abra o projeto.
+2. Compile o projeto.
+3. Execute a classe principal para iniciar a aplicação.
+
+## 6. Contribuição
+
+Contribuições são bem-vindas! Se você deseja contribuir para o projeto, siga estas etapas:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature ou correção.
+3. Faça suas alterações e teste.
+4. Envie um pull request para revisão.
+
+## 7. Estrutura de Pastas
+
+Abaixo está a organização das pastas do projeto, com uma breve descrição do conteúdo de cada uma:
+
+```bash
+ProjetoGrafo/
+│
+├── src/
+│   ├── model/
+│   │   ├── entities/
+│   │   │   ├── Grafo.java               # Classe que representa o grafo
+│   │   │   ├── Aresta.java              # Classe que representa uma aresta no grafo
+│   │   └── applicantion/
+│   │       ├── Program.java             # Classe principal que executa a aplicação
+│   └── view/
+│       ├── BFSVisualizer.java           # Visualizador para a busca em largura (BFS)
+│       ├── DFSVisualizer.java           # Visualizador para a busca em profundidade (DFS)
+│       ├── DijkstraVisualizer.java      # Visualizador para o algoritmo de Dijkstra
+│       ├── PrimVisualizer.java          # Visualizador para o algoritmo de Prim
+│       ├── GraphVisualizer.java         # Visualizador geral do grafo
+│
+├── lib/
+│   └── pom.xml                          # Arquivo de configuração do Maven
+│
+├── README.md                            # Arquivo de documentação do projeto
+└── .gitignore                           # Arquivo para ignorar arquivos desnecessários no Git
+
+```
+
